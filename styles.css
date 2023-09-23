@@ -1,0 +1,114 @@
+/* Estilos base para el menú y el contenido */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos personalizados para el icono de menú */
+#menu-icon {
+    width: 65px; /* Ancho deseado */
+    height: 41px; /* Alto deseado */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Contorno blanco semi-transparente */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo del mismo color que el borde */
+    border-radius: 5px; /* Borde redondeado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+#menu-icon {
+    position: fixed;
+    top: 20px; /* Ajusta la distancia desde la parte superior según tus preferencias */
+    left: 20px; /* Ajusta la distancia desde la izquierda según tus preferencias */
+}
+
+#menu {
+    background-color: #2d2c39;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px; /* El menú estará inicialmente oculto */
+    transition: left 0.3s; /* Agregamos una transición suave al desplegar el menú */
+    overflow-y: auto;
+}
+
+#menu.active {
+    left: 0; /* Mostramos el menú cuando tiene la clase "active" */
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu ul li {
+    margin-bottom: 10px;
+}
+
+#menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.2s;
+}
+
+#menu ul li a i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#menu ul li a:hover {
+    background-color: #3a3946;
+}
+#vision {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid white;
+    text-align: justify;
+}
+
+#Productos {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid white;
+    text-align: justify;
+}
+#equipo {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid white;
+    text-align: justify;
+}
+#content {
+    margin-left: 0; /* Inicialmente, el contenido no está desplazado */
+    padding: 20px;
+    transition: margin-left 0.3s; /* Agregamos una transición al desplazar el contenido */
+    text-align: justify;
+}
+/* Personalizar el estilo de Lightbox para mostrar el video en la parte inferior */
+.lb-outerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lb-dataContainer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.lb-prev, .lb-next {
+    margin-top: 20px; /* Espacio entre los botones y el video */
+}
+
+
